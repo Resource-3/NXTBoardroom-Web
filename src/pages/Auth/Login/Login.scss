@@ -1,0 +1,158 @@
+@import '../../../assets/scss/variable.scss';
+
+body{
+  overflow-x: hidden;
+
+.LoginPage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    font-family: $Verdana_Regular;
+  position: absolute;
+  top: 0;
+
+    a {
+      text-decoration: none;
+      color: $TEXT_BLUE;
+      opacity: 0.5;
+    }
+
+    a:hover{
+      color: $TEXT_BLUE;
+      opacity: 0.5;
+    }
+    
+
+    .logo{
+      padding-top: 49px;
+    }
+
+
+.container-fluid{
+  padding-right: var(--bs-gutter-x, 0rem);
+   padding-left: var(--bs-gutter-x,0rem); 
+    margin-right: auto;
+}
+
+
+
+.title{
+  position: relative;
+    padding-top: 250px;
+    h1{
+      padding-top: 76px;
+      color: #0000FF;
+      font-family: "tussilagobk_bold";
+      font-size: 72px;
+      text-transform: uppercase;
+      background-image: url(https://res.cloudinary.com/zudu/image/upload/v1648116642/NXT-Boardroom/Project-Images/banner.svg);
+      background-repeat: no-repeat;
+      background-position: right center;
+      height: 586px;
+      width: 81%;
+    }
+
+}
+
+.login-col{
+  padding-left: 343px;
+  padding-right: 0;
+
+
+  .sub-title{
+    position: relative;
+    padding-top: 250px;
+
+
+
+    .login-title{
+      text-transform: uppercase;
+      color: $TEXT_BLUE;
+      font-family: "tussilagobk_bold";
+      font-size: $FONT_32;
+      padding-top: 76px;
+    }
+
+
+    .login-subtitle{
+      font-family: $Verdana_Regular;
+      color: $TEXT_BLACK;
+      font-size: $FONT_14;
+      font-weight: $FONT_WEIGHT_400;
+      padding-top: 24px;
+      // padding-bottom: 24px;
+
+.text-field{
+  padding-top: 24px;
+  border-radius: 0;
+}
+
+    }
+
+    .login-subtitl{
+      font-family: $Verdana_Regular;
+      color: $TEXT_BLACK;
+      font-size: $FONT_14;
+      font-weight: $FONT_WEIGHT_400;
+    }
+
+    .textField{
+      margin-bottom: 24px;
+    }
+
+    
+
+    form{
+      padding-top: 24px;
+      .custombtnfield{
+        border-radius: 0;
+      }
+    }
+
+}
+
+}
+
+
+.footerlinks{
+  padding-top: 24px;
+
+  .remember{
+    display: flex;
+    align-items: center;
+
+.check-box {
+   width: 16px;
+   height: 16px;
+   margin-right: 8px;
+ }
+
+// .check-box#check::before{
+// border: 1px solid blue;
+// }
+
+
+
+
+.labelTitle {
+  color: $TEXT_LIGHT_BLACK;
+  font-size: $FONT_14;
+  font-family: $Verdana_Regular;
+  font-weight: $FONT_WEIGHT_400;
+}
+
+
+  }
+
+  
+  .forgetlink{
+    flex: 3.1;
+
+  }
+
+}
+
+}
+
+}

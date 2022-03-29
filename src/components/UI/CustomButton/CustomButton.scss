@@ -1,0 +1,66 @@
+@import '../../../assets/scss/variable.scss';
+
+.btn {
+  &.custombtn {
+    background: $BG_BLUE;
+    width: 336px;
+    max-width: 100% ;
+    font-family: $Tussilagobk_Bold;
+    font-size: $FONT_16 ;
+    // font-weight: $FONT_WEIGHT_700;
+    padding: 11px 24px;
+    min-height: 48px;
+    color: $TEXT_WHITE;
+    border:1px solid transparent !important;
+
+
+    &.outline_btn{
+      background-color: white;
+      border: 1px solid white !important;
+      color: $TEXT_BLACK;
+      &:not(:disabled) {
+        background: white;
+      }
+      &:not(:disabled):not(.disabled):active {
+        background: white;
+        color: $TEXT_WHITE;
+        border: 1px solid white;
+      }
+  
+      &:not(.disabled):focus {
+        box-shadow: none !important;
+        background: white;
+        color: $TEXT_BLACK;
+      }
+    }
+    &:disabled {
+      opacity: 1;
+      cursor: no-drop;
+      opacity: 0.3;
+      span{
+        color: $TEXT_WHITE;
+      }
+      &:focus {
+      }
+    }
+
+    &:not(:disabled) {
+      box-shadow: none;
+      background: $BG_BLUE;
+    }
+
+    &:not(:disabled):not(.disabled):active {
+      background: $BG_BLUE;
+    }
+
+    &:not(.disabled):focus {
+      box-shadow: none !important;
+      background: $BG_BLUE;
+    }
+
+    &.btn-loading {
+      opacity: 1 !important;
+      cursor: default;
+    }
+  }
+}

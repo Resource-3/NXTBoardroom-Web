@@ -1,0 +1,187 @@
+@import '../../../assets/scss/variable.scss';
+
+.textField {
+  position: relative;
+  width: 100%;
+  display: block;
+  margin-bottom: 16px;
+
+  .form-control {
+    background: #ffffff;
+    font-family: $Verdana_Regular;
+    color: $TEXT_BLACK;
+    font-size: $FONT_14;
+    padding: 12.5px 14px;
+    padding-right: 30px;
+    height: auto;
+    width:336px;
+    max-width: 100%;
+    border: 2px solid $BORDER_LIGHT_GREY;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &:disabled {
+      background: #ffffff;
+      border: 1px solid $BORDER_BLACK;
+      color: $TEXT_BLACK;
+      cursor: not-allowed;
+    }
+
+    &.error {
+      border: 1px solid $BORDER_RED;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: $BORDER_BLUE;
+    }
+
+    &:focus-visible {
+      text-shadow: none;
+    }
+
+    &::placeholder {
+      color: $TEXT_GREY;
+ 
+    }
+    &:-ms-input-placeholder {
+      color:  $TEXT_GREY;
+    }
+
+    &::-ms-input-placeholder {
+      color:  $TEXT_GREY;
+    }
+    
+
+  }
+
+  .iconSection {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .icon-css {
+    position: relative;
+    font-size: $FONT_18;
+    cursor: pointer;
+
+    &.icon-eye-off {
+      color: $BORDER_LIGHT_GREY;
+    }
+
+    &.icon-eye-on {
+      color: $TEXT_BLACK;
+    }
+  }
+
+  .errorMsg {
+    position: relative;
+    width: 100%;
+    left: 0;
+    display: block;
+    font-size: $FONT_14;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    color: $TEXT_BLACK;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+    font-family:$Verdana_Regular
+  }
+
+  .errorMsg.show {
+    max-height: 130px;
+    transition: max-height 0.3s ease-in;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: $TEXT_RED;
+    margin-top: 4px;
+
+    .red,
+    .green {
+      display: flex;
+      padding: 2px 0;
+      width: 100%;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+
+      &::before {
+        position: relative;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        margin-right: 5px;
+      }
+    }
+
+    .red {
+      span {
+        color: $TEXT_BLACK;
+      }
+
+      &::before {
+        background-color: #ffffff;
+      }
+    }
+
+    .green {
+      span {
+        color: green;
+      }
+
+      &::before {
+        background-color: green;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .textField {
+    .form-control {
+      font-size: $FONT_14;
+      line-height: 14px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .textField {
+    .form-control {
+      font-size: $FONT_14;
+      line-height: 14px;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1279px) {
+  .textField {
+    .form-control {
+      font-size: $FONT_14;
+      line-height: 14px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  .textField {
+    .form-control {
+      font-size: $FONT_14;
+      line-height: 16px;
+    }
+  }
+}

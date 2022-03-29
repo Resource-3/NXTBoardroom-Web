@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import routes from "./routes";
+import { connect } from "react-redux";
+import { multilanguage, loadLanguages } from "redux-multilanguage";
+function App(props) {
 
-function App() {
+  useEffect(() => {
+    props.dispatch(
+      loadLanguages({
+        languages: { //from merchant supported languages
+          en: require("./translations/english.json"),
+        }
+      })
+    );
+  })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Suspense fallback={<h1></h1>}>
+        <BrowserRouter>
+          <Routes>
+            {routes.map((route, index) => {
+              return <Route
+                key={index}
+                exact={route.exact}
+                path={route.path}
+                element={route.component}
+              />
+            })}
+          </Routes>
+        </BrowserRouter>
+      </Suspense>
     </div>
   );
 }
 
-export default App;
+export default connect()(multilanguage(App));
