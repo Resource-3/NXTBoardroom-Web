@@ -1,4 +1,3 @@
-
 import loaderReducer from "./loaderReducer";
 import { combineReducers } from "redux";
 import { createMultilanguageReducer } from "redux-multilanguage";

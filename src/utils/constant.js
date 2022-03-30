@@ -16,12 +16,5 @@ const Constant = {
   IMAGESURL: {
     LOGO: 'https://res.cloudinary.com/zudu/image/upload/v1648116642/NXT-Boardroom/Project-Images/logo.svg'
   },
-  // ROLES: {
-  //   SUPERADMIN: "SuperAdmin",
-  // },
-
-  // GOOGLEMAPAPI: {
-  //   APIKEY: "AIzaSyDYiRK54loDXDLRIxB9nl5R8fvSozD2PPM" //  zudu account zudu project
-  // },
 };
 export default Constant;

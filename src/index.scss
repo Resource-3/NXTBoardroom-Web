@@ -39,11 +39,11 @@ body {
   opacity: 0.3;
 }
 
-.grid-container > div {
- border-left: 1px solid #B7ABAB;
- opacity: 0.3;
+.grid-container>div {
+  border-left: 1px solid #B7ABAB;
+  opacity: 0.3;
   padding: 0px 0;
-  height:100vh;
+  height: 100vh;
   border: 1px solid;
   border-bottom: 0px;
 }
@@ -57,78 +57,66 @@ body {
 
 
 @font-face {
-    font-family: "verdana_regular";
-    src: url("./assets/fonts/verdana-webfont.woff2") format("woff2"),
-      url("./assets/fonts/verdana-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
+  font-family: "verdana_regular";
+  src: url("./assets/fonts/verdana-webfont.woff2") format("woff2"),
+    url("./assets/fonts/verdana-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
-  @font-face {
-    font-family: "tussilagobk_regular";
-    src: url("./assets/fonts/typodermic_-_tussilagobk-regular-webfont.woff2") format("woff2"),
-      url("./assets/fonts/typodermic_-_tussilagobk-regular-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-
-
-  @font-face {
-    font-family: "tussilagobk_bold";
-    src: url("./assets/fonts/typodermic_-_tussilagorg-bold-webfont.woff2") format("woff2"),
-      url("./assets/fonts/typodermic_-_tussilagorg-bold-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
+@font-face {
+  font-family: "tussilagobk_regular";
+  src: url("./assets/fonts/typodermic_-_tussilagobk-regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/typodermic_-_tussilagobk-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 
-  @font-face {
-    font-family: 'NXT-Boardroom';
-    src:  url('./assets/fonts/NXT-Boardroom.eot?rci9uo');
-    src:  url('./assets/fonts/NXT-Boardroom.eot?rci9uo#iefix') format('embedded-opentype'),
-      url('./assets/fonts/NXT-Boardroom.ttf?rci9uo') format('truetype'),
-      url('./assets/fonts/NXT-Boardroom.woff?rci9uo') format('woff'),
-      url('./assets/fonts/NXT-Boardroom.svg?rci9uo#NXT-Boardroom') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'NXT-Boardroom' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-eye:before {
-    content: "\e900";
-  }
-  
-  .icon-Home:before {
-    content: "\e901";
-    color: #030d45;
-  }
-  
+@font-face {
+  font-family: "tussilagobk_bold";
+  src: url("./assets/fonts/typodermic_-_tussilagorg-bold-webfont.woff2") format("woff2"),
+    url("./assets/fonts/typodermic_-_tussilagorg-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 
+@font-face {
+  font-family: 'NXT-Boardroom';
+  src: url('./assets/fonts/NXT-Boardroom.eot?rci9uo');
+  src: url('./assets/fonts/NXT-Boardroom.eot?rci9uo#iefix') format('embedded-opentype'),
+    url('./assets/fonts/NXT-Boardroom.ttf?rci9uo') format('truetype'),
+    url('./assets/fonts/NXT-Boardroom.woff?rci9uo') format('woff'),
+    url('./assets/fonts/NXT-Boardroom.svg?rci9uo#NXT-Boardroom') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
-// @font-face {
-//   font-family: "nexa_boldregular";
-//   src: url("./assets/fonts/nexa_bold-webfont.woff2") format("woff2"),
-//     url("./assets/fonts/nexa_bold-webfont.woff") format("woff");
-//   font-weight: normal;
-//   font-style: normal;
-//   font-display: swap;
-// }
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'NXT-Boardroom' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-eye:before {
+  content: "\e900";
+}
+
+.icon-Home:before {
+  content: "\e901";
+}
