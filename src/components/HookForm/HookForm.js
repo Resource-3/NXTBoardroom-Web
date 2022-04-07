@@ -11,7 +11,7 @@ function HookForm(props) {
     });
     useEffect(() => {
         init && init(method);
-    }, [])
+    })
 
     return (
         <form onSubmit={method.handleSubmit(onSubmit)}>

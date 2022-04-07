@@ -1,10 +1,10 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import { multilanguage } from "redux-multilanguage";
 
 const PageNotFound = ({ strings }) => {
-  console.log('fdsfdfsd', strings);  
+  console.log('fdsfdfsd', strings);
   return (
-      <div>{strings["PageNotFound"]}</div>
+    <div>{strings["PageNotFound"]}</div>
   )
 }
 

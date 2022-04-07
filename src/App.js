@@ -17,7 +17,7 @@ function App(props) {
 
   return (
     <div className="App">
-      <Suspense fallback={<h1></h1>}>
+      <Suspense fallback={<h1>{ }</h1>}>
         <BrowserRouter>
           <Routes>
             {routes.map((route, index) => {

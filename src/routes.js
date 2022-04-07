@@ -4,9 +4,9 @@ import Layout from "./layout/index";
 
 const Login = lazy(() => import('./pages/Auth/Login/Login'));
 const Preferences = lazy(() => import('./pages/Preferences/Preferences'));
-const PageNotFound = lazy(() => import('./pages/PageNotFound/PageNotFound'));
-const ForgetPassword = lazy(() => import ('./pages/Auth/ForgetPassWord/ForgetPassword'));
-const ResetPassword = lazy(() => import ('./pages/Auth/ResetPassWord/ResetPassword'));
+// const PageNotFound = lazy(() => import('./pages/PageNotFound/PageNotFound'));
+const ForgetPassword = lazy(() => import('./pages/Auth/ForgetPassWord/ForgetPassword'));
+const ResetPassword = lazy(() => import('./pages/Auth/ResetPassWord/ResetPassword'));
 
 const routes = [
   {
@@ -28,12 +28,12 @@ const routes = [
     exact: true
   },
   {
-    path:"/resetpassword",
-    component :<ResetPassword />,
-    authenticate:false,
-    exact:true
+    path: "/resetpassword",
+    component: <ResetPassword />,
+    authenticate: false,
+    exact: true
   }
-  
+
 ];
 
 export const LayoutRoute = [
@@ -45,7 +45,7 @@ export const LayoutRoute = [
   },
 
 
-  
+
 ];
 
 export default routes;

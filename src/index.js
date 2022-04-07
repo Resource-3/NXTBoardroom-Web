@@ -10,7 +10,6 @@ import { save, load } from "redux-localstorage-simple";
 import { Provider } from "react-redux";
 import rootReducer from "./redux/reducers/rootReducer";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row , Col} from 'react-bootstrap';
 
 const store = createStore(
   rootReducer,
@@ -24,16 +23,16 @@ ReactDOM.render(
 
       {/* grid container start region */}
       <div className="grid-container">
-  <div className="grid-item"></div>
-  <div className="grid-item"></div>
-  <div className="grid-item"></div>  
-  <div className="grid-item"></div>
-  <div className="grid-item"></div>
-  <div className="grid-item"></div>  
-   </div>  
-   {/* grid container end region */}
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+      </div>
+      {/* grid container end region */}
 
-   
+
       <App />
     </Provider>
   </React.StrictMode>,

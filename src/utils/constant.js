@@ -1,3 +1,4 @@
+/* eslint-disable */
 const Constant = {
   BASE_URL: process.env.REACT_APP_BASE_URL,
   REGEX: {
